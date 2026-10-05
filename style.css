@@ -1,0 +1,70 @@
+body {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.site-header,
+.site-footer {
+    background-color: #6fa8dc;
+    border-color: #3d85c6 !important;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #cfe2f3;
+    font-size: 18px;
+}
+
+#site-title {
+    color: #000;
+}
+
+#main-menu .nav-link {
+    background-color: #cfe2f3;
+    border-color: #3d85c6 !important;
+    color: #000;
+}
+
+#main-menu .nav-link:hover {
+    background-color: #3d85c6;
+    color: #fff;
+}
+
+.block {
+    background-color: #6fa8dc;
+    border-color: #3d85c6 !important;
+}
+
+.block a {
+    color: #000;
+}
+
+.block a:hover {
+    color: #fff;
+}
+
+.table {
+    --bs-table-bg: #fff;
+    --bs-table-striped-bg: #cfe2f3;
+    --bs-table-border-color: #3d85c6;
+}
+
+.table thead th {
+    background-color: #3d85c6;
+    color: #fff;
+}
+
+.form-control,
+.form-select {
+    border-color: #3d85c6;
+}
+
+.btn-primary {
+    --bs-btn-bg: #3d85c6;
+    --bs-btn-border-color: #3d85c6;
+    --bs-btn-hover-bg: #2a6299;
+    --bs-btn-hover-border-color: #2a6299;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задание 4 — Мой сайт</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header border-bottom border-2 py-2">
+        <div class="container">
+            <div class="row align-items-center g-2">
+                <div class="col-12 col-md-auto d-flex justify-content-center">
+                    <div id="logo" class="d-flex align-items-center justify-content-center fw-bold">Лого</div>
+                </div>
+                <div class="col-12 col-md">
+                    <h1 id="site-title" class="h3 text-center text-md-start m-0">Название сайта</h1>
+                </div>
+            </div>
+            <nav id="main-menu" class="nav flex-column flex-md-row gap-2 pt-2">
+                <a class="nav-link border rounded text-center px-3 py-2" href="#links">Ссылка меню 1</a>
+                <a class="nav-link border rounded text-center px-3 py-2" href="#table">Ссылка 2</a>
+                <a class="nav-link border rounded text-center px-3 py-2" href="#form">Ссылка 3</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-3">
+        <div class="row g-3">
+
+            <section class="col-12 col-md-6" id="links">
+                <div class="block p-3 border h-100">
+                    <h2 class="h4 mb-3">Список гиперссылок</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="http://kubsu.ru/">1. Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                        <li class="mb-2"><a href="https://kubsu.ru/">2. Абсолютная гиперссылка на главную сайта kubsu.ru в протоколе https</a></li>
+                        <li class="mb-2">
+                            3.
+                            <a href="https://kubsu.ru/">
+                                <img src="https://www.kubsu.ru/sites/default/files/news/universitet.jpg" alt="Ссылка-изображение на КубГУ" width="400" height="200">
+                            </a>
+                        </li>
+                        <li class="mb-2"><a href="/internal">4. Сокращенная ссылка на внутреннюю страницу</a></li>
+                        <li class="mb-2"><a href="/">5. Сокращенная ссылка на главную страницу</a></li>
+                        <li class="mb-2"><a href="#fragment">6. Ссылка на фрагмент текущей страницы</a></li>
+                        <li class="mb-2"><a href="https://example.com/search?param1=one&amp;param2=two&amp;param3=three">7. Ссылка с тремя параметрами в URL</a></li>
+                        <li class="mb-2"><a href="https://example.com/page?id=123">8. Ссылка с параметром id в URL</a></li>
+                        <li class="mb-2"><a href="page.html">9. Относительная ссылка на страницу в текущем каталоге</a></li>
+                        <li class="mb-2"><a href="about/page.html">10. Относительная ссылка на страницу в каталоге about</a></li>
+                        <li class="mb-2"><a href="../page.html">11. Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                        <li class="mb-2"><a href="../../page.html">12. Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+                        <li class="mb-2">13. Контекстная ссылка в тексте абзаца: <a href="https://kubsu.ru/">КубГУ</a> — главный сайт университета.</li>
+                        <li class="mb-2"><a href="https://ru.wikipedia.org/wiki/HTML#History">14. Ссылка на фрагмент страницы стороннего сайта</a></li>
+                        <li class="mb-2">
+                            <p class="mb-2">15. Ссылки из прямоугольных и круглых областей картинки:</p>
+                            <img src="https://www.kubsu.ru/sites/default/files/news/1_obnovlennyy_fasad_kubgu.jpg" alt="Карта ссылок" usemap="#image-map" width="400" height="200">
+                            <map name="image-map">
+                                <area shape="rect" coords="0,0,150,150" href="https://kubsu.ru/" alt="Прямоугольная область">
+                                <area shape="circle" coords="175,75,50" href="https://kubsu.ru/" alt="Круглая область">
+                            </map>
+                        </li>
+                        <li class="mb-2"><a href="">16. Ссылка с пустым href</a></li>
+                        <li class="mb-2"><a>17. Ссылка без href</a></li>
+                        <li class="mb-2"><a href="https://example.com/private" rel="nofollow">18. Ссылка, по которой запрещен переход поисковикам</a></li>
+                        <li class="mb-2"><a href="https://example.com/noindex" rel="nofollow" title="Запрещено для индексации поисковиками">19. Ссылка, запрещенная для индексации поисковиками</a></li>
+                        <li class="mb-2">
+                            <p class="mb-2">20. Нумерованный список ссылок с подписями title:</p>
+                            <ol>
+                                <li><a href="https://kubsu.ru/" title="КубГУ">КубГУ</a></li>
+                                <li><a href="https://www.kubsu.ru/" title="КубГУ www">КубГУ www</a></li>
+                                <li><a href="https://kubsu.ru/ru" title="КубГУ русская версия">КубГУ русская версия</a></li>
+                            </ol>
+                        </li>
+                        <li class="mb-2"><a href="ftp://user:password@example.com/file.txt">21. Ссылка на файл на сервере FTP с авторизацией</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="col-12 col-md-6 order-first order-md-0" id="table">
+                <div class="block p-3 border h-100">
+                    <h2 class="h4 mb-3">Таблица</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">№</th>
+                                    <th scope="col">Название</th>
+                                    <th scope="col">Описание</th>
+                                    <th scope="col">Количество</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Товар А</td><td>Описание товара А</td><td>10</td></tr>
+                                <tr><td>2</td><td>Товар Б</td><td>Описание товара Б</td><td>20</td></tr>
+                                <tr><td>3</td><td>Товар В</td><td>Описание товара В</td><td>30</td></tr>
+                                <tr><td>4</td><td>Товар Г</td><td>Описание товара Г</td><td>40</td></tr>
+                                <tr><td colspan="2">Итого по двум товарам</td><td>Сумма</td><td>50</td></tr>
+                                <tr><td colspan="4">Итоговая строка таблицы</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-md-6" id="form">
+                <div class="block p-3 border h-100">
+                    <h2 class="h4 mb-3">Форма</h2>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">ФИО:</label>
+                            <input type="text" class="form-control" id="fullname"
+name="fullname" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">e-mail:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthdate" class="form-label">Дата рождения:</label>
+                            <input type="date" class="form-control" id="birthdate" name="birthdate">
+                        </div>
+
+                        <fieldset class="mb-3">
+                            <legend class="form-label fs-6">Пол:</legend>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">Мужской</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">Женский</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="mb-3">
+                            <label for="languages" class="form-label">Любимый язык программирования:</label>
+                            <select class="form-select" id="languages" name="languages" multiple size="11">
+                                <option value="Pascal">Pascal</option>
+                                <option value="C">C</option>
+                                <option value="C++">C++</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Python">Python</option>
+                                <option value="Java">Java</option>
+                                <option value="Haskell">Haskell</option>
+                                <option value="Clojure">Clojure</option>
+                                <option value="Prolog">Prolog</option>
+                                <option value="Scala">Scala</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="bio" class="form-label">Биография:</label>
+                            <textarea class="form-control" id="bio" name="bio" rows="5"></textarea>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="contract" name="contract">
+                            <label class="form-check-label" for="contract">С контрактом ознакомлен(а)</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                    </form>
+        </div>
+    </main>
+
+    <footer class="site-footer border-top border-2 py-3 text-center">
+        <p class="mb-0">(c) Кучма Валерия</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
